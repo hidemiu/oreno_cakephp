@@ -1,0 +1,1 @@
+{"virtualbox":{"/vagrant":{"owner":"vagrant","group":"apache","mount_options":["dmode=777","fmode=777","uid=1000","gid=48"],"guestpath":"/vagrant","hostpath":"/Users/Apple/program/MyVagrant/cake_centos","disabled":false,"__vagrantfile":true}}}
