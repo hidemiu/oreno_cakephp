@@ -1,4 +1,5 @@
 <h1>users</h1>
+
 <table>
     <tr>
         <th>Id</th>
@@ -11,3 +12,13 @@
     </tr>
     <?php endforeach; ?>
 </table>
+
+
+<div align="right">
+    <!-- <?= $this->Form->button($this->Html->link('Add new user', ['action' => 'add'])); ?> -->
+
+    <?= $this->Form->button(__('Add new user')); ?>
+    <?php echo $this->Form->data; ?>
+
+</div>
+
