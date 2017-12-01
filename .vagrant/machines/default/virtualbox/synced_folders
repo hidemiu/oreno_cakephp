@@ -1,1 +1,1 @@
-{"virtualbox":{"/vagrant":{"owner":"vagrant","group":"apache","mount_options":["dmode=777","fmode=777","uid=1000","gid=48"],"guestpath":"/vagrant","hostpath":"/Users/Apple/program/MyVagrant/cake_centos","disabled":false,"__vagrantfile":true}}}
+{"virtualbox":{"/var/www/html":{"mount_options":["dmode=777","fmode=777","uid=1000","gid=1000"],"guestpath":"/var/www/html","hostpath":"/home/arms-sarms/tmp/oreno_cakephp","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/home/arms-sarms/tmp/oreno_cakephp","disabled":false,"__vagrantfile":true}}}
