@@ -9,3 +9,21 @@ CREATE TABLE users (
     created DATETIME DEFAULT NULL,
     modified DATETIME DEFAULT NULL
 );
+
+CREATE TABLE customers (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    telephone_number VARCHAR(20) NOT NULL,
+    mailaddress VARCHAR(50) NOT NULL,
+    created DATETIME DEFAULT NULL,
+    modified DATETIME DEFAULT NULL
+);
+
+CREATE TABLE requests (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    customer_id INT UNSIGNED NOT NULL,
+    created DATETIME,
+    modified DATETIME,
+    FOREIGN KEY customer_key (customer_id) REFERENCES customers(id)
+);

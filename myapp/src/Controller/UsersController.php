@@ -40,7 +40,7 @@ class UsersController extends AppController
     {
         $this->set('users', $this->Users->find('all'));
 
-        if ($this->request->is('ajax')) {
+        if ($this->request->is('post')) {
             return $this->redirect(['action' => 'add']);
         }
     }
@@ -63,6 +63,11 @@ class UsersController extends AppController
             $this->Flash->error(__('Unable to add the user.'));
         }
         $this->set('user', $user);
+    }
+
+    public function edit($id)
+    {
+
     }
 
 }
