@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "163c94a955a9c68b07a07d64efc0940d",
+    "content-hash": "8b49339c883e852fe127ebf6d3b2ef00",
     "packages": [
         {
             "name": "aura/intl",
@@ -2144,6 +2144,37 @@
                 "dump"
             ],
             "time": "2017-11-07T14:16:22+00:00"
+        },
+        {
+            "name": "webuilder240/cake-console-routes",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webuilder240/cake-console-routes.git",
+                "reference": "0e65b7c10f39d234bf9eb019e38afb0197f19bb5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webuilder240/cake-console-routes/zipball/0e65b7c10f39d234bf9eb019e38afb0197f19bb5",
+                "reference": "0e65b7c10f39d234bf9eb019e38afb0197f19bb5",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "~3.0",
+                "php": ">=5.4.16"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "autoload": {
+                "psr-4": {
+                    "CakeConsoleRoutes\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "CakeConsoleRoutes is like a [rake routes] command for CakePHP3",
+            "time": "2015-07-20T11:38:23+00:00"
         }
     ],
     "aliases": [],

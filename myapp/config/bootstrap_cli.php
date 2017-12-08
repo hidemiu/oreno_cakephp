@@ -36,3 +36,8 @@ try {
 }
 
 Plugin::load('Migrations');
+
+if (Configure::read('debug')) {
+    Plugin::load('CakeConsoleRoutes');
+}
+
