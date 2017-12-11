@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b49339c883e852fe127ebf6d3b2ef00",
+    "content-hash": "0a614083da58e996f68141a6cb3220bf",
     "packages": [
         {
             "name": "aura/intl",
@@ -1110,16 +1110,16 @@
         },
         {
             "name": "cakephp/debug_kit",
-            "version": "3.11.1",
+            "version": "3.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cakephp/debug_kit.git",
-                "reference": "c36fdac8c5fd427b06dd7d8b2d01cb90a92dfd4c"
+                "reference": "a5be986553d5c706c3a259779345de18e5590e46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/c36fdac8c5fd427b06dd7d8b2d01cb90a92dfd4c",
-                "reference": "c36fdac8c5fd427b06dd7d8b2d01cb90a92dfd4c",
+                "url": "https://api.github.com/repos/cakephp/debug_kit/zipball/a5be986553d5c706c3a259779345de18e5590e46",
+                "reference": "a5be986553d5c706c3a259779345de18e5590e46",
                 "shasum": ""
             },
             "require": {
@@ -1166,7 +1166,7 @@
                 "debug",
                 "kit"
             ],
-            "time": "2017-08-29T07:49:35+00:00"
+            "time": "2017-11-29T02:48:54+00:00"
         },
         {
             "name": "composer/ca-bundle",
