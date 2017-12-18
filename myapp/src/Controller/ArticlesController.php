@@ -5,9 +5,27 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Utility\Text;
+use Cake\Validation\Validator;
+use Cake\Event\Event;
 
 class ArticlesController extends AppController
 {
+
+    public function beforeSave($event, $entity, $options)
+    {
+        if ($entity->isNew() && !$entity->slug) {
+            $sluggedTitle = Text::slug($entity->title);
+            // スラグをスキーマで定義されている最大長に調整
+            $entity->slug = substr($sluggedTitle, 0, 191);
+        }
+
+        // これは一時的なもので、後で認証を構築するときに
+        // 削除されます。
+        if (!$entity->user_id) {
+            $entity->user_id = 1;
+        }
+    }
+
     public function initialize()
     {
         parent::initialize();
@@ -47,21 +65,6 @@ class ArticlesController extends AppController
         $this->set('article', $article);
     }
 
-    public function beforeSave($event, $entity, $options)
-    {
-        if ($entity->isNew() && !$entity->slug) {
-            $sluggedTitle = Text::slug($entity->title);
-            // スラグをスキーマで定義されている最大長に調整
-            $entity->slug = substr($sluggedTitle, 0, 191);
-        }
-
-        // これは一時的なもので、後で認証を構築するときに
-        // 削除されます。
-        if (!$entity->user_id) {
-            $entity->user_id = 1;
-        }
-    }
-
     public function edit($slug)
     {
         $article = $this->Articles->findBySlug($slug)->firstOrFail();
@@ -75,6 +78,30 @@ class ArticlesController extends AppController
         }
 
         $this->set('article', $article);
+    }
+
+    public function validationDefault(Validator $validator)
+    {
+        $validator
+            ->notEmpty('title')
+            ->minLength('title', 10)
+            ->maxLength('title', 255)
+
+            ->notEmpty('body')
+            ->minLength('body', 10);
+
+        return $validator;
+    }
+
+    public function delete($slug)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+
+        $article = $this->Articles->findBySlug($slug)->firstOrFail();
+        if ($this->Articles->delete($article)) {
+            $this->Flash->success(__('The {0} article has been deleted.', $article->title));
+            return $this->redirect(['action' => 'index']);
+        }
     }
 
 }
