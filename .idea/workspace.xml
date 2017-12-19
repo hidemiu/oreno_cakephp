@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArticlesController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArticlesController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
                 <element signature="e#75#108#0#PHP" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
       <file leaf-file-name="edit.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/edit.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -74,8 +74,8 @@
       <file leaf-file-name="add.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/add.ctp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,12 +91,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ctp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.ctp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="330">
               <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
 >>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
+=======
+            <state relative-caret-position="360">
+              <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
               <folding />
             </state>
           </provider>
@@ -136,11 +141,14 @@
         <option value="$PROJECT_DIR$/myapp/config/app.php" />
 =======
         <option value="$PROJECT_DIR$/myapp/src/Template/Articles/view.ctp" />
-        <option value="$PROJECT_DIR$/myapp/src/Template/Articles/add.ctp" />
-        <option value="$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php" />
         <option value="$PROJECT_DIR$/myapp/src/Template/Articles/edit.ctp" />
         <option value="$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp" />
+<<<<<<< HEAD
 >>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
+=======
+        <option value="$PROJECT_DIR$/myapp/src/Template/Articles/add.ctp" />
+        <option value="$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
       </list>
     </option>
   </component>
@@ -233,6 +241,7 @@
               <item name="oreno_cakephp" type="b2602c69:ProjectViewProjectNode" />
               <item name="oreno_cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="myapp" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -240,6 +249,11 @@
               <item name="oreno_cakephp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="myapp" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="webroot" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Articles" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
             </path>
           </expand>
           <select />
@@ -299,21 +313,29 @@
       <workItem from="1512716210087" duration="3206000" />
       <workItem from="1513050844973" duration="8127000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1513177501989" duration="1282000" />
       <workItem from="1513316888285" duration="57000" />
       <workItem from="1513316961751" duration="17000" />
 =======
       <workItem from="1513177501989" duration="2931000" />
 >>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
+=======
+      <workItem from="1513177501989" duration="5768000" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="24615000" />
 =======
     <option name="totallyTimeSpent" value="26190000" />
 >>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
+=======
+    <option name="totallyTimeSpent" value="29027000" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-28" width="1366" height="796" extended-state="6" />
@@ -349,6 +371,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/myapp/config/routes.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -389,6 +412,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
     <entry file="file://$PROJECT_DIR$/myapp/config/bootstrap_cli.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
@@ -639,6 +664,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/myapp/src/Controller/AppController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -655,6 +681,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
     <entry file="file://$PROJECT_DIR$/myapp/vendor/cakephp/cakephp/src/ORM/Table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -717,44 +745,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/add.ctp">
+    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        <state relative-caret-position="360">
+          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/vendor/cakephp/cakephp/src/Utility/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/vendor/cakephp/cakephp/src/Validation/Validator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/src/Controller/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1414">
+          <caret line="295" column="17" lean-forward="false" selection-start-line="295" selection-start-column="17" selection-end-line="295" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/add.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/edit.ctp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+          <folding />
+>>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/myapp/src/Model/Table/ArticlesTable.php" />
+    <entry file="file://$PROJECT_DIR$/myapp/src/Model/Entity/Article.php" />
+    <entry file="file://$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php" />
+    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp" />
+=======
     <entry file="file://$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="66" column="24" lean-forward="false" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
             <element signature="e#75#108#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/edit.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
-          <folding />
->>>>>>> f9402c370c2bd035bf05d892f1f8e86ba621b867
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/src/Model/Table/ArticlesTable.php" />
-    <entry file="file://$PROJECT_DIR$/myapp/src/Model/Entity/Article.php" />
-    <entry file="file://$PROJECT_DIR$/myapp/src/Controller/ArticlesController.php" />
-    <entry file="file://$PROJECT_DIR$/myapp/src/Template/Articles/index.ctp" />
+>>>>>>> d40670a7948c1469be2cef02d0e3f43fb31d0b95
   </component>
 </project>

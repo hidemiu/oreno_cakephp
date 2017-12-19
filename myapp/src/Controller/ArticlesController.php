@@ -4,10 +4,12 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
-use Cake\Utility\Text;
+// use Cake\Event\Event;
+// use Cake\ORM\Table;
 
 class ArticlesController extends AppController
 {
+
     public function initialize()
     {
         parent::initialize();
@@ -38,6 +40,7 @@ class ArticlesController extends AppController
             // user_id の決め打ちは一時的なもので、あとで認証を構築する際に削除されます。
             $article->user_id = 1;
 
+            // debug($this->articles);
             if ($this->Articles->save($article)) {
                 $this->Flash->success(__('Your article has been saved.'));
                 return $this->redirect(['action' => 'index']);
@@ -45,21 +48,6 @@ class ArticlesController extends AppController
             $this->Flash->error(__('Unable to add your article.'));
         }
         $this->set('article', $article);
-    }
-
-    public function beforeSave($event, $entity, $options)
-    {
-        if ($entity->isNew() && !$entity->slug) {
-            $sluggedTitle = Text::slug($entity->title);
-            // スラグをスキーマで定義されている最大長に調整
-            $entity->slug = substr($sluggedTitle, 0, 191);
-        }
-
-        // これは一時的なもので、後で認証を構築するときに
-        // 削除されます。
-        if (!$entity->user_id) {
-            $entity->user_id = 1;
-        }
     }
 
     public function edit($slug)
@@ -75,6 +63,17 @@ class ArticlesController extends AppController
         }
 
         $this->set('article', $article);
+    }
+
+    public function delete($slug)
+    {
+        $this->request->allowMethod(['post', 'delete']);
+
+        $article = $this->Articles->findBySlug($slug)->firstOrFail();
+        if ($this->Articles->delete($article)) {
+            $this->Flash->success(__('The {0} article has been deleted.', $article->title));
+            return $this->redirect(['action' => 'index']);
+        }
     }
 
 }
