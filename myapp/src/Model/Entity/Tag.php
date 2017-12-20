@@ -1,21 +1,19 @@
 <?php
 namespace App\Model\Entity;
 
-use Cake\Auth\DefaultPasswordHasher; // この行を追加
 use Cake\ORM\Entity;
 
 /**
- * User Entity
+ * Tag Entity
  *
  * @property int $id
- * @property string $email
- * @property string $password
+ * @property string $title
  * @property \Cake\I18n\FrozenTime $created
  * @property \Cake\I18n\FrozenTime $modified
  *
  * @property \App\Model\Entity\Article[] $articles
  */
-class User extends Entity
+class Tag extends Entity
 {
 
     /**
@@ -28,28 +26,9 @@ class User extends Entity
      * @var array
      */
     protected $_accessible = [
-        'email' => true,
-        'password' => true,
+        'title' => true,
         'created' => true,
         'modified' => true,
         'articles' => true
     ];
-
-    /**
-     * Fields that are excluded from JSON versions of the entity.
-     *
-     * @var array
-     */
-    protected $_hidden = [
-        'password'
-    ];
-
-    protected function _setPassword($value)
-    {
-        if (strlen($value)) {
-            $hasher = new DefaultPasswordHasher();
-
-            return $hasher->hash($value);
-        }
-    }
 }
