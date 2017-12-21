@@ -27,7 +27,10 @@ class ArticlesController extends AppController
 
     public function view($slug = null)
     {
-        $article = $this->Articles->findBySlug($slug)->firstOrFail();
+        $article = $this->Articles
+            ->findBySlug($slug)
+            ->contain('Tags')
+            ->firstOrFail();
         $this->set(compact('article'));
 
 //        $tags = $this->Articles->Tags->findBySlug($slug);
@@ -57,9 +60,9 @@ class ArticlesController extends AppController
         $tags = $this->Articles->Tags->find('list');
 
         // ビューコンテキストに tags をセット
-        $this->set('tags', $tags);
+//        $this->set('tags', $tags);
 
-        $this->set('article', $article);
+        $this->set('article', $this->Articles);
     }
 
     public function edit($slug)
