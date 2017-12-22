@@ -64,6 +64,7 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
 
         $this->loadComponent('Auth', [
+            'authorize'=> 'Controller',
             'authenticate' => [
                 'Form' => [
                     'fields' => [
