@@ -37,12 +37,35 @@ class TagsFixture extends TestFixture
      *
      * @var array
      */
+    /*
     public $records = [
         [
             'id' => 1,
             'title' => 'Lorem ipsum dolor sit amet',
             'created' => '2017-12-20 04:53:31',
             'modified' => '2017-12-20 04:53:31'
+        ],
+    ];
+    */
+
+    public $records = [
+        [
+            'id' => 1,
+            'title' => 'PHP',
+            'created' => '2017-11-18 12:15:34',
+            'modified' => '2017-11-18 12:15:34'
+        ],
+        [
+            'id' => 2,
+            'title' => 'CakePHP',
+            'created' => '2017-11-18 12:15:34',
+            'modified' => '2017-11-18 12:15:34'
+        ],
+        [
+            'id' => 3,
+            'title' => 'Bakery',
+            'created' => '2017-11-18 12:15:34',
+            'modified' => '2017-11-18 12:15:34'
         ],
     ];
 }
